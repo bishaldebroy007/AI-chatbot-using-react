@@ -20,7 +20,10 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className="bottom">
-
+                <div className="bottom-item">
+                    <img src={assets.question_icon} alt="" />
+                    <p>Help</p>
+                </div>
             </div>
             
         </div>
