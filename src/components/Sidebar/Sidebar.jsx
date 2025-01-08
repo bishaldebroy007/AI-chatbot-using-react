@@ -26,22 +26,22 @@ const Sidebar = () => {
         ) : null}
       </div>
 
-      <div className="bottom recent-entry">
-        <div className="bottom-item">
+      <div className="bottom">
+        <div className="bottom-item recent-entry">
           <img src={assets.question_icon} alt="" />
           <p>Help</p>
         </div>
       </div>
 
-      <div className="bottom recent-entry">
-        <div className="bottom-item">
+      <div className="bottom">
+        <div className="bottom-item recent-entry">
           <img src={assets.history_icon} alt="" />
           <p>Activity</p>
         </div>
       </div>
 
-      <div className="bottom recent-entry">
-        <div className="bottom-item">
+      <div className="bottom">
+        <div className="bottom-item recent-entry">
           <img src={assets.setting_icon} alt="" />
           <p>Settings</p>
         </div>
