@@ -32,6 +32,20 @@ const Main = () => {
                         <img src={assets.bulb_icon} alt="" />
                     </div>
                 </div>
+                <div className="main-bottom">
+                    <div className="search-box">
+                        <input type="text" placeholder='Enter a prompt here...' />
+                        <div>
+                            <img src={assets.gallery_icon} alt="" />
+                            <img src={assets.menu_icon} alt="" />
+                            <img src={assets.send_icon} alt="" />
+                        </div>
+                    </div>
+                    <p className="bottom-info">
+                        Gemini Clone may display inaccurate info, including about people, so doube-check the inforfation.
+                    </p>
+                </div>
+
             </div>
 
         </div>

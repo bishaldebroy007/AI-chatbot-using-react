@@ -82,3 +82,38 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     /* Subtle shadow */
 }
+
+.main-bottom {
+    bottom: 0;
+    position: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+    position: absolute;
+}
+
+.main-bottom .search-box {
+    background-color: #f0f4f9;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.main-bottom .search-box img {
+    width: 25px;
+    cursor: pointer;
+
+}
+
+/* search box desigining */
+.search-box input {
+    flex: 1;
+    background: transparent;
+    padding: 9px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
