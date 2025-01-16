@@ -131,3 +131,62 @@
     text-align: center;
     font-weight: 300;
 }
+
+
+/* Search results  */
+.result {
+    max-height: 68vh;
+    padding: 0px 5%;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.result-title {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result img {
+    width: 60px;
+    border-radius: 40%;
+}
+
+.result-data {
+    align-items: start;
+    display: flex;
+    gap: 20px;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.loader hr {
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-color: #f6f7f8;
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+    background-size: 800px 50px;
+    animation: loader 3s infinite linear;
+
+}
+
+/* Animations */
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
