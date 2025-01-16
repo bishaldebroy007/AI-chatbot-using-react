@@ -26,9 +26,10 @@ const ContextProvider = (props) => {
         setLoading(true)
         setShowResult(true)
         setRecentPrompt(input)
+        setPrevPrompts(prev => [...prev, input]); //Saving what I searched.
         const response = await run(input)
         let responseArray = response.split("**")
-        let newResponse;
+        let newResponse = "";
         for (let index = 0; index < responseArray.length; index++) {
             if (index === 0 || index % 2 == 1) {
                 newResponse += responseArray[index];
@@ -40,6 +41,7 @@ const ContextProvider = (props) => {
         let newResponse2 = newResponse.split("*").join("</br>");
         // setResultData(newResponse2);
         let newResponseArray = newResponse2.split(" ");
+        // Typing effect 
         for (let i = 0; i < newResponseArray.length; i++) {
             const nextWord = newResponseArray[i];
             delayPara(i, nextWord + " ")
