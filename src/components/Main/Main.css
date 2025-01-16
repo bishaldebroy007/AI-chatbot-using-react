@@ -180,6 +180,12 @@
 
 }
 
+.result-data p {
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 /* Animations */
 @keyframes loader {
     0% {
@@ -191,8 +197,21 @@
     }
 }
 
-.result-data p {
-    line-height: 1.7;
-    font-size: 18px;
-    font-weight: 300;
+@media (max-width: 600px) {
+    .main-bottom input {
+        flex: none;
+        width: 150px;
+    }
+
+    .main-bottom img {
+        width: 20px;
+    }
+
+    .search-box {
+        padding: 5px 10px;
+    }
+
+    .search-box div {
+        gap: 4.5px;
+    }
 }
