@@ -1,8 +1,17 @@
 import React from 'react'
 import "./Main.css"
 import { assets } from '../../assets/assets'
+import { useContext } from 'react';
+
+import { Context } from '../../context/Context'
 
 const Main = () => {
+
+
+    // Making the AI queries and search results logical
+    const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context);
+
+    // Making the AI quaries and search results logical
     return (
         <div className='main'>
             <div className="nav">
@@ -34,20 +43,18 @@ const Main = () => {
                 </div>
                 <div className="main-bottom">
                     <div className="search-box">
-                        <input type="text" placeholder='Enter a prompt here...' />
+                        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here...' />
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                            <img src={assets.send_icon} alt="" />
+                            <img onClick={() => onSent()} src={assets.send_icon} alt="" />
                         </div>
                     </div>
                     <p className="bottom-info">
-                        Gemini Clone may display inaccurate info, including about people, so doube-check the inforfation.
+                        Gemini Clone may display inaccurate info, including about people, so double-check the information.
                     </p>
                 </div>
-
             </div>
-
         </div>
     )
 }
