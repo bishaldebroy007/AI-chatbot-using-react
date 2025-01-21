@@ -1,14 +1,12 @@
-import React from 'react'
 import "./Main.css"
 import { assets } from '../../assets/assets'
-import { createContext } from 'react';
 import { useContext } from 'react';
 
 import { Context } from '../../context/Context'
 
 const Main = () => {
 
-
+    console.log("Asi")
     // Making the AI queries and search results logical
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context);
 
