@@ -10,7 +10,7 @@ const Main = () => {
     // Making the AI queries and search results logical
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context);
 
-    // Making the AI quaries and search results logical
+    // Making the AI queries and search results logical
     return (
         <div className='main'>
             <div className="nav">
@@ -22,12 +22,12 @@ const Main = () => {
                 {!showResult
                     ? <>
                         <div className="greet">
-                            <p><span>Hello, Roy.</span></p>
-                            <p>How Can I help you today?</p>
+                            <p><span>Hello, Dear.</span></p>
+                            <p>How can I help you today?</p>
                         </div>
                         <div className="cards">
                             <div className="card">
-                                <p>Suggest me Beautiful places for trips.</p>
+                                <p>Suggest Beautiful places for trips.</p>
                                 <img src={assets.compass_icon} alt="" />
                             </div>
                             <div className="card">
@@ -35,7 +35,7 @@ const Main = () => {
                                 <img src={assets.code_icon} alt="" />
                             </div>
                             <div className="card">
-                                <p>Brainstorm team bonding activities our work retreat.</p>
+                                <p>Brainstorm team bonding activities during our work retreat.</p>
                                 <img src={assets.message_icon} alt="" />
                             </div>
                             <div className="card">
@@ -96,7 +96,7 @@ const Main = () => {
                         </div>
                     </div>
                     <p className="bottom-info">
-                        This AI Chat Bot may display inaccurate info, including about people, so double-check the information.
+                        This AI chatbot may display inaccurate info, including about people, so double-check the information.
                     </p>
                 </div>
             </div>
